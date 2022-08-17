@@ -6,6 +6,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:isGame="true"
+        android:appCategory="game"
         android:label="@string/app_name"
         android:theme="@style/GdxTheme" >
         <activity
@@ -19,6 +20,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+            <!-- Enabling Game Modes -->
+            <meta-data
+                android:name="com.android.app.gamemode.performance.enabled"
+                android:value="true"/>
+            <meta-data
+                android:name="com.android.app.gamemode.battery.enabled"
+                android:value="true"/>
     </application>
 
 </manifest>
